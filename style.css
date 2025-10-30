@@ -305,7 +305,7 @@ span {
 }
 
 .built {
-
+    position: relative;
     background-image: url("/assets/builtbg.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -320,6 +320,7 @@ span {
     padding-top: 500px;
     padding-bottom: 120px;
     height: 100%;
+    position: relative;
 
     display: flex;
     justify-content: space-between;
@@ -347,6 +348,9 @@ span {
     text-decoration: none;
     color: #9DE03F;
     transition: 0.3s linear;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
 .fa-arrow-right {
@@ -404,4 +408,51 @@ footer {
 
 .hero__btn:hover {
     color: #9DE03F;
+}
+
+.built__mbox {
+    /* display: flex;
+    flex-direction: column; */
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    border: none;
+    transform: translate(460px, 60%);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #0B1902;
+    color: #FFFFFF;
+   
+
+    p {
+        margin: 10px 0px;
+    }
+}
+
+.built__mbox::backdrop{
+    background: #00000091;
+} 
+.skip {
+    border: 1.5px solid #9DE03F;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    color: #9DE03F;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.next {
+    background-color: #9DE03F;
+    border: none;
+    color: #0B1902;
+    border-radius: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    cursor: pointer;
 }
