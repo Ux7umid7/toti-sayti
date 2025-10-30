@@ -53,12 +53,27 @@ header {
     color: #9DE03F;
     border: 1.5px solid #9DE03F;
     background-color: transparent;
+    transition: 0.3s linear;
+}
+
+.border-btn:hover {
+    background-color: #9DE03F;
+    color: #0B1902;
+
 }
 
 .bg-btn {
     color: #0B1902;
     background-color: #9DE03F;
     border: none;
+    transition: 0.3s linear;
+
+}
+
+.bg-btn:hover {
+
+    background-color: transparent;
+    border: 1.5px solid #9DE03F;
 }
 
 h1 {
@@ -210,13 +225,18 @@ span {
 
 .wild__list {
     width: 740px;
-    height: 500px;
+    height: 580px;
     display: flex;
     gap: 24px;
     list-style: none;
     overflow-x: scroll;
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 20px 20px;
+}
+
+.wild__list::-webkit-scrollbar {
+    display: none;
 }
 
 .wild__item {
@@ -228,6 +248,12 @@ span {
     border-radius: 8px;
     padding: space/5;
     border-radius: 8px;
+    transition: 0.3s linear;
+}
+
+.wild__item:hover {
+    box-shadow: 0px 0px 15px 1px #0B1902;
+    transform: scale(1.03);
 }
 
 .wild__subimg {
@@ -320,11 +346,23 @@ span {
     font-weight: 400;
     text-decoration: none;
     color: #9DE03F;
+    transition: 0.3s linear;
 }
-footer{
+
+.fa-arrow-right {
+    transition: 0.3s linear;
+
+}
+
+.built__view:hover~.fa-arrow-right {
+    transform: rotate(-90deg);
+}
+
+footer {
     background-color: #0B1902;
     padding: 20px;
 }
+
 .footer__list {
     list-style: none;
     display: flex;
@@ -336,18 +374,34 @@ footer{
 .footer__link {
     text-decoration: none;
     color: #9DE03F;
+    transition: 0.3s linear;
 }
-.footer__top{
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__top {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
 }
-.lists{
+
+.lists {
     display: flex;
     gap: 100px;
 }
-.footer__title{
+
+.footer__title {
     font-size: 430px;
     font-weight: 700;
 
+}
+
+.hero__btn {
+    transition: 0.3s linear;
+}
+
+.hero__btn:hover {
+    color: #9DE03F;
 }
