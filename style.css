@@ -120,10 +120,10 @@ h4 {
 
     font-weight: 400;
     font-style: Regular;
-    font-size: 60px;
+    font-size: 50px;
     text-transform: uppercase;
 
-    line-height: 130%;
+    line-height: 100%;
     letter-spacing: 0%;
     text-transform: uppercase;
 
@@ -160,8 +160,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-     font-family: "Gasoek One", sans-serif;
+h6,
+span {
+    font-family: "Gasoek One", sans-serif;
     font-weight: 500;
 
 }
@@ -330,7 +331,7 @@ span {
 }
 
 .built__title {
-    width: 445px;
+    
     color: #FFFFFF;
 }
 
@@ -397,7 +398,7 @@ footer {
 }
 
 .footer__title {
-    font-size: 430px;
+    font-size: 270px;
     font-weight: 700;
 
 }
@@ -423,16 +424,17 @@ footer {
     gap: 10px;
     background-color: #0B1902;
     color: #FFFFFF;
-   
+
 
     p {
         margin: 10px 0px;
     }
 }
 
-.built__mbox::backdrop{
+.built__mbox::backdrop {
     background: #00000091;
-} 
+}
+
 .skip {
     border: 1.5px solid #9DE03F;
     border-radius: 16px;
@@ -455,4 +457,8 @@ footer {
     padding-bottom: 4px;
     padding-top: 4px;
     cursor: pointer;
+}
+span{
+      font-family: "Gasoek One", sans-serif;
+      
 }
