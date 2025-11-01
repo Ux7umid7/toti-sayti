@@ -331,7 +331,7 @@ span {
 }
 
 .built__title {
-    
+
     color: #FFFFFF;
 }
 
@@ -418,17 +418,30 @@ footer {
     padding: 10px;
     border-radius: 16px;
     border: none;
-    transform: translate(460px, 60%);
+    transform: translate(460px, 50%);
     justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: #0B1902;
     color: #FFFFFF;
+    width: 400px;
+    height: 300px;
 
+    img {
+        width: 100%;
+    }
+
+    button {
+        margin: 0px 5px;
+    }
 
     p {
         margin: 10px 0px;
     }
+}
+
+.built__mbox::-webkit-scrollbar {
+    display: none;
 }
 
 .built__mbox::backdrop {
@@ -458,7 +471,8 @@ footer {
     padding-top: 4px;
     cursor: pointer;
 }
-span{
-      font-family: "Gasoek One", sans-serif;
-      
+
+span {
+    font-family: "Gasoek One", sans-serif;
+
 }
